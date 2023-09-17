@@ -10,5 +10,5 @@ if __name__ == '__main__':
     # setup logger
     setup_logger()
 
-    app = SQDApp()
+    app = App()
     app.run()
