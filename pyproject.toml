@@ -15,6 +15,7 @@ pytest-mongodb = "^2.4.0"
 [tool.poetry.group.dev.dependencies]
 jupyter = "^1.0.0"
 pandas = "^2.1.0"
+black = "*"
 
 [build-system]
 requires = ["poetry-core"]
