@@ -10,5 +10,5 @@ class TemplateTelegramBotConfig(TelegramBotConfig):
 
 
 class TemplateAppConfig(AppConfig):
-    _database_config_class = TemplateDatabaseConfig
-    _telegram_bot_config_class = TemplateTelegramBotConfig
+    database: TemplateDatabaseConfig = TemplateDatabaseConfig()
+    telegram_bot: TemplateTelegramBotConfig = TemplateTelegramBotConfig()
