@@ -28,5 +28,22 @@ class TemplateTelegramBot(TelegramBot):
             )
             self.app.save_telegram_message(request)
 
+    # from bot_base.core import mark_command
+    # @mark_command(commands=["start"], description="Start command")
+    # async def start(self, message: types.Message):
+    #     response = dedent(
+    #         f"""
+    #         Hi! I'm the {self.__class__.__name__}.
+    #         I'm based on the [bot-base](https://github.com/calmmage/bot-base) library.
+    #         I support the following features:
+    #         - voice messages parsing
+    #         - hashtag and attribute recognition (#ignore, ignore=True)
+    #         - multi-message mode
+    #         Use /help for more details
+    #         """
+    #     )
+    #     await message.answer(response)
+
     async def bootstrap(self):
+        # self.register_command(self.start, commands="start")
         await super().bootstrap()
