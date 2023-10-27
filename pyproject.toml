@@ -1,7 +1,8 @@
 [tool.poetry]
 name = "bot-template"
 version = "0.0.1"
-template_version = "0.2.1" # update for new bot-base version
+# Template Version: 0.2.2
+# Add scheduled job example
 description = ""
 authors = ["Petr Lavrov <calmmage@gmail.com>"]
 readme = "README.md"
@@ -17,6 +18,7 @@ pytest-mongodb = "^2.4.0"
 jupyter = "^1.0.0"
 pandas = "^2.1.0"
 black = "*"
+apscheduler = "*"
 
 [build-system]
 requires = ["poetry-core"]
