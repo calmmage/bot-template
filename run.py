@@ -16,4 +16,17 @@ if __name__ == "__main__":
     setup_logger()
     args = parser.parse_args()
     app = TemplateApp(data_dir=args.data_dir)
+
+    from aiogram import Router
+    # create new router
+    r = Router()
+
+    # create a sample handler for router
+
+    async def sample_callback_handler(Callback):
+        pass
+
+    r.callback_query(sample_callback_handler)
+
+    app.bot._dp.include_router(r)
     app.run()
