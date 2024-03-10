@@ -1,22 +1,22 @@
 [tool.poetry]
 name = "bot-template"
 version = "0.0.1"
-# Template Version: 0.2.2
+# Template Version: 0.2.3 # clean up dependencies
 # Add scheduled job example
 description = ""
 authors = ["Petr Lavrov <calmmage@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.10"
 # for stability, use frozen-app-name branch
 bot-base = { git = "https://github.com/calmmage/bot-base.git", branch = "main" }
-pytest = "^7.4.2"
-pytest-mongodb = "^2.4.0"
+pytest = "*"
+pytest-mongodb = "*"
 
 [tool.poetry.group.dev.dependencies]
-jupyter = "^1.0.0"
-pandas = "^2.1.0"
+jupyter = ">=1.0.0"
+pandas = ">=2.0.0"
 black = "*"
 apscheduler = "*"
 
